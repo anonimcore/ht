@@ -128,3 +128,44 @@ nav a:hover {
 .link:hover::after {
     width: 100%;
 }
+
+/* ===== CREDITS ===== */
+
+.credits {
+    margin-top: 120px;
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    animation: fadeIn 2s ease;
+}
+
+.credits h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.credits p {
+    opacity: 0.8;
+    margin: 6px 0;
+}
+
+.credits .small {
+    font-size: 13px;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+.highlight {
+    color: #ff3b3b;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+.highlight:hover {
+    text-shadow: 0 0 10px red;
+}
