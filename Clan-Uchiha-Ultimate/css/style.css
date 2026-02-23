@@ -1,4 +1,3 @@
-
 * {
     margin:0;
     padding:0;
@@ -12,6 +11,8 @@ body {
     color:white;
     overflow-x:hidden;
 }
+
+/* ===== MANGEKYO BACKGROUND ===== */
 
 .mangekyo {
     position:fixed;
@@ -32,6 +33,8 @@ body {
     to {transform:translate(-50%,-50%) rotate(360deg);}
 }
 
+/* ===== NAVBAR ===== */
+
 nav {
     position:fixed;
     width:100%;
@@ -42,6 +45,7 @@ nav {
     padding:20px 40px;
     backdrop-filter:blur(20px);
     background:rgba(0,0,0,0.4);
+    z-index:1000;
 }
 
 nav ul {
@@ -61,10 +65,35 @@ nav a:hover {
     color:red;
 }
 
-.logo {
-    font-weight:600;
-    font-size:20px;
+/* ===== LOGO FIRMA ANIMADA ===== */
+
+.logo svg {
+    width:220px;
+    height:auto;
 }
+
+.signature text {
+    font-family:"Brush Script MT", cursive;
+    font-size:60px;
+    fill:none;
+    stroke:#ffd700;
+    stroke-width:2;
+    stroke-dasharray:600;
+    stroke-dashoffset:600;
+    animation:sign 3s ease forwards;
+}
+
+@keyframes sign {
+    to {
+        stroke-dashoffset:0;
+    }
+}
+
+.signature {
+    filter:drop-shadow(0 0 8px rgba(255,215,0,0.6));
+}
+
+/* ===== HERO ===== */
 
 .hero {
     height:100vh;
@@ -82,6 +111,13 @@ nav a:hover {
     margin-bottom:20px;
 }
 
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+/* ===== CARDS ===== */
+
 .card {
     margin:100px auto;
     padding:40px;
@@ -97,103 +133,66 @@ nav a:hover {
     box-shadow:0 0 30px rgba(255,0,0,0.4);
 }
 
-@keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
-}
+/* ===== LINKS PERSONALIZADOS ===== */
 
 .link {
-    color: #ff3b3b;
-    text-decoration: none;
-    font-weight: 600;
-    position: relative;
-    transition: 0.3s;
+    color:#ff3b3b;
+    text-decoration:none;
+    font-weight:600;
+    position:relative;
+    transition:0.3s;
 }
 
 .link::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 0;
-    bottom: -3px;
-    background: red;
-    transition: 0.3s;
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:-3px;
+    background:red;
+    transition:0.3s;
 }
 
 .link:hover {
-    color: white;
+    color:white;
 }
 
 .link:hover::after {
-    width: 100%;
+    width:100%;
 }
 
-/* ===== FOOTER PREMIUM ===== */
+/* ===== FOOTER ===== */
 
 .credits {
-    width: 100%;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "San Francisco", Helvetica, Arial, sans-serif;
-    background: transparent;
-    color: rgba(255,255,255,0.6);
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    margin-top: 120px;
-}
-
-.credits .author {
-    font-weight: 600;
-    color: white;
-    transition: 0.3s ease;
-}
-
-.credits .author:hover {
-    color: #ff3b3b;
-    text-shadow: 0 0 8px rgba(255,0,0,0.6);
+    width:100%;
+    padding:40px 20px;
+    text-align:center;
+    font-family:-apple-system,BlinkMacSystemFont,"San Francisco",Helvetica,Arial,sans-serif;
+    background:transparent;
+    color:rgba(255,255,255,0.6);
+    font-size:14px;
+    letter-spacing:0.5px;
+    margin-top:120px;
 }
 
 .credits .mini {
-    margin-top: 8px;
+    margin-top:8px;
+}
 
-    /* ===== INSTAGRAM COLOR PREMIUM ===== */
+/* ===== INSTAGRAM PREMIUM ===== */
 
 .instagram,
 .instagram:visited,
 .instagram:active,
 .instagram:focus {
-    color: #ff4d8d !important;  /* rosado elegante */
-    text-decoration: none !important;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    color:#ff4d8d !important;
+    text-decoration:none !important;
+    font-weight:500;
+    transition:0.3s ease;
 }
 
 .instagram:hover {
-    color: #ffffff !important;
-    text-shadow: 0 0 12px rgba(255, 77, 141, 0.6);
-}
-    /* ===== LOGO FIRMA ANIMADA ===== */
-
-.signature text {
-    font-family: "Brush Script MT", cursive;
-    font-size: 60px;
-    fill: none;
-    stroke: #ffd700; /* amarillo oro */
-    stroke-width: 2;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: sign 3s ease forwards;
-}
-
-/* Animación de firma */
-@keyframes sign {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-/* Glow suave cuando termina */
-.signature {
-    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+    color:#ffffff !important;
+    text-shadow:0 0 12px rgba(255,77,141,0.6);
 }
