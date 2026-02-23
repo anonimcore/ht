@@ -173,20 +173,27 @@ nav a:hover {
     color: #ffffff !important;
     text-shadow: 0 0 12px rgba(255, 77, 141, 0.6);
 }
-    /* ===== LOGO ESTILO FIRMA PREMIUM ===== */
+    /* ===== LOGO FIRMA ANIMADA ===== */
 
-.logo {
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-    font-size: 28px;
-    font-weight: 600;
-    color: #ffd700; /* amarillo elegante */
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.signature text {
+    font-family: "Brush Script MT", cursive;
+    font-size: 60px;
+    fill: none;
+    stroke: #ffd700; /* amarillo oro */
+    stroke-width: 2;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: sign 3s ease forwards;
 }
 
-.logo:hover {
-    color: #ffcc00;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
-    transform: scale(1.05);
+/* Animación de firma */
+@keyframes sign {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Glow suave cuando termina */
+.signature {
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
 }
