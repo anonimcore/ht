@@ -178,3 +178,18 @@ nav a:hover {
 .instagram i {
     margin-right: 6px;
 }
+    /* ===== FIX TOTAL LINKS ===== */
+
+.credits a,
+.credits a:visited,
+.credits a:active,
+.credits a:focus {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.credits a:hover {
+    background: linear-gradient(45deg, #f58529, #e1306c, #833ab4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
