@@ -199,24 +199,20 @@ nav a:hover {
 
 /* ===== HERO FIRMA ANIMADA GRANDE ===== */
 
-.hero-signature {
-    margin-bottom: 20px;
-}
-
 .big-signature {
-    width: 600px;
-    max-width: 90%;
+    width: 700px;
+    max-width: 95%;
     height: auto;
 }
 
 .big-signature text {
     font-family: "Brush Script MT", cursive;
-    font-size: 120px;
+    font-size: 160px;
     fill: none;
     stroke: #ffffff;
     stroke-width: 3;
-    stroke-dasharray: 1200;
-    stroke-dashoffset: 1200;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
     animation: bigSign 4s ease forwards;
 }
 
@@ -226,7 +222,6 @@ nav a:hover {
     }
 }
 
-/* Glow suave después de firmarse */
 .big-signature {
-    filter: drop-shadow(0 0 20px rgba(255,255,255,0.4));
+    filter: drop-shadow(0 0 25px rgba(255,255,255,0.4));
 }
