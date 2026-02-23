@@ -129,43 +129,33 @@ nav a:hover {
     width: 100%;
 }
 
-/* ===== CREDITS ===== */
+/* ===== FOOTER PREMIUM ===== */
 
 .credits {
-    margin-top: 120px;
-    padding: 60px 20px;
+    width: 100%;
+    padding: 40px 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255,255,255,0.08);
-    animation: fadeIn 2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "San Francisco", Helvetica, Arial, sans-serif;
+    background: transparent;
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 120px;
 }
 
-.credits h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
+.credits .author {
     font-weight: 600;
-    letter-spacing: 1px;
+    color: white;
+    transition: 0.3s ease;
 }
 
-.credits p {
-    opacity: 0.8;
-    margin: 6px 0;
-}
-
-.credits .small {
-    font-size: 13px;
-    opacity: 0.5;
-    margin-top: 15px;
-}
-
-.highlight {
+.credits .author:hover {
     color: #ff3b3b;
-    font-weight: 600;
-    position: relative;
-    transition: 0.3s;
+    text-shadow: 0 0 8px rgba(255,0,0,0.6);
 }
 
-.highlight:hover {
-    text-shadow: 0 0 10px red;
+.credits .mini {
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.4;
 }
