@@ -173,3 +173,20 @@ nav a:hover {
     color: #ffffff !important;
     text-shadow: 0 0 12px rgba(255, 77, 141, 0.6);
 }
+    /* ===== LOGO ESTILO FIRMA PREMIUM ===== */
+
+.logo {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffd700; /* amarillo elegante */
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    transform: scale(1.05);
+}
