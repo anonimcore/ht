@@ -157,39 +157,19 @@ nav a:hover {
 .credits .mini {
     margin-top: 8px;
 
-    /* ===== INSTAGRAM STYLE PRO ===== */
+    /* ===== INSTAGRAM COLOR PREMIUM ===== */
 
 .instagram,
 .instagram:visited,
-.instagram:active {
-    color: #ffffff;
-    text-decoration: none;
+.instagram:active,
+.instagram:focus {
+    color: #ff4d8d !important;  /* rosado elegante */
+    text-decoration: none !important;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .instagram:hover {
-    background: linear-gradient(45deg, #f58529, #e1306c, #833ab4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 10px rgba(225,48,108,0.4);
-}
-
-.instagram i {
-    margin-right: 6px;
-}
-    /* ===== FIX TOTAL LINKS ===== */
-
-.credits a,
-.credits a:visited,
-.credits a:active,
-.credits a:focus {
     color: #ffffff !important;
-    text-decoration: none !important;
-}
-
-.credits a:hover {
-    background: linear-gradient(45deg, #f58529, #e1306c, #833ab4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px rgba(255, 77, 141, 0.6);
 }
