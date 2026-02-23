@@ -226,24 +226,28 @@ nav a:hover {
     filter: drop-shadow(0 0 25px rgba(255,255,255,0.4));
 }
 
-/* ===== INSTAGRAM KEVINS STYLE ===== */
+/* ===== INSTAGRAM ESTILO MODERNO PREMIUM ===== */
 
-.instagram {
-    font-family: "Brush Script MT", cursive;
-    font-size: 22px;
-    letter-spacing: 2px;
-    color: #ffd700 !important;
-    text-decoration: none !important;
-    transition: 0.3s ease;
+.credits .instagram,
+.credits .instagram:visited,
+.credits .instagram:active,
+.credits .instagram:focus {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "San Francisco", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.instagram:hover {
-    color: #ffffff !important;
-    text-shadow: 0 0 15px rgba(255,215,0,0.8);
-    transform: scale(1.1);
+.credits .instagram:hover {
+    color: #ffffff;
+    letter-spacing: 5px;
+    text-shadow: 0 0 12px rgba(255,255,255,0.5);
 }
 
-.instagram i {
+.credits .instagram i {
     margin-right: 6px;
-    font-size: 18px;
+    font-size: 16px;
 }
