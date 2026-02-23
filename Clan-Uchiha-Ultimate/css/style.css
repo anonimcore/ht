@@ -157,22 +157,24 @@ nav a:hover {
 .credits .mini {
     margin-top: 8px;
 
-    /* Instagram */
-    .instagram {
+    /* ===== INSTAGRAM STYLE PRO ===== */
+
+.instagram,
+.instagram:visited,
+.instagram:active {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .instagram:hover {
-    color: #E1306C;
-    text-shadow: 0 0 8px rgba(225,48,108,0.6);
+    background: linear-gradient(45deg, #f58529, #e1306c, #833ab4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(225,48,108,0.4);
 }
 
 .instagram i {
     margin-right: 6px;
-}
-    font-size: 12px;
-    opacity: 0.4;
 }
