@@ -225,3 +225,25 @@ nav a:hover {
 .big-signature {
     filter: drop-shadow(0 0 25px rgba(255,255,255,0.4));
 }
+
+/* ===== INSTAGRAM KEVINS STYLE ===== */
+
+.instagram {
+    font-family: "Brush Script MT", cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #ffd700 !important;
+    text-decoration: none !important;
+    transition: 0.3s ease;
+}
+
+.instagram:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 15px rgba(255,215,0,0.8);
+    transform: scale(1.1);
+}
+
+.instagram i {
+    margin-right: 6px;
+    font-size: 18px;
+}
