@@ -291,17 +291,17 @@ body {
 
     color: white;
 }
-
+/* Miniatura YOUTUBE */
 .video-box iframe {
-    width: 600px;       /* MÁS PEQUEÑO */
+    width: 480px;      /* MÁS PEQUEÑO */
+    height: 270px;     /* proporción 16:9 */
     max-width: 90%;
-    height: 340px;      /* proporcional */
-    border-radius: 20px;
-    box-shadow: 0 0 25px rgba(255,0,0,0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,0,0,0.6);
     transition: 0.3s ease;
 }
 
 .video-box iframe:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 40px rgba(255,0,0,0.9);
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(255,0,0,0.9);
 }
