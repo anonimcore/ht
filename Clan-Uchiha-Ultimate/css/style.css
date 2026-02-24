@@ -293,8 +293,8 @@ body {
 }
 /* Miniatura YOUTUBE */
 .video-box iframe {
-    width: 480px;      /* MÁS PEQUEÑO */
-    height: 270px;     /* proporción 16:9 */
+    width: 400px;      /* MÁS PEQUEÑO */
+    height: 225px;     /* proporción 16:9 */
     max-width: 90%;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255,0,0,0.6);
