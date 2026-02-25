@@ -6,91 +6,90 @@
     <title>K. Santos | Aports</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- TUS ESTILOS ORIGINALES --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background: 
+                linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+                url("imagenes/fondo.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Ubuntu', sans-serif; /* Aplicando Ubuntu a todo */
+        }
+
+        .ultimo-video {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .ultimo-video h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 20px red;
+        }
+
+        .video-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-box iframe {
+            width: 900px;
+            max-width: 90%;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(255,0,0,0.6);
+            transition: 0.4s ease;
+        }
+
+        .video-box iframe:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 60px rgba(255,0,0,1);
+        }
+
+        /* --- BARRA DE NAVEGACIÓN UBUNTU --- */
+        .navbar {
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7); 
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            opacity: 0.7;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+            color: #ffcc00; 
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+        }
+
+        /* Ajuste para que el contenido no quede oculto tras la barra */
+        header.hero {
+            padding-top: 120px; 
+        }
+    </style>
 </head>
-
-<style>
-/* --- TUS ESTILOS ORIGINALES (SIN TOCAR) --- */
-body {
-    margin: 0;
-    padding: 0;
-    background: 
-        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
-        url("imagenes/fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-}
-
-.ultimo-video {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.ultimo-video h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-shadow: 0 0 20px red;
-}
-
-.video-box {
-    display: flex;
-    justify-content: center;
-}
-
-.video-box iframe {
-    width: 900px;
-    max-width: 90%;
-    height: 500px;
-    border-radius: 20px;
-    box-shadow: 0 0 40px rgba(255,0,0,0.6);
-    transition: 0.4s ease;
-}
-
-.video-box iframe:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 60px rgba(255,0,0,1);
-}
-
-/* --- NUEVA BARRA DE NAVEGACIÓN UBUNTU --- */
-.navbar {
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.6); 
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: all 0.3s ease;
-    opacity: 0.8;
-}
-
-.nav-links a:hover {
-    opacity: 1;
-    color: #ffcc00; /* Amarillo neón */
-    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
-}
-
-/* Ajuste para que el contenido no empiece debajo de la barra */
-header.hero {
-    padding-top: 100px; 
-}
-</style>
 
 <body>
 
@@ -98,7 +97,8 @@ header.hero {
 
 <nav class="navbar">
     <div class="nav-links">
-        <a href="https://discord.gg/TU_LINK">Discord</a>
+        <a href="index.html" style="color: #ffcc00; opacity: 1;">Inicio</a>
+        <a href="https://discord.gg/TU_LINK" target="_blank">Discord</a>
         <a href="pc.html">PC</a>
         <a href="droid.html">Droid</a>
         <a href="contacto.html">Contacto</a>
@@ -115,7 +115,7 @@ header.hero {
         </svg>
     </h1>
 
-    <p>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">
         Plataforma creada por <b>Kevin Santos</b>, dedicada a compartir aportes originales de SAMP, 
         proyectos digitales desarrollados con visión, creatividad y mejora constante.
         <br><br>
@@ -165,32 +165,6 @@ header.hero {
     </div>
 </section>
 
-<section class="aporte-container">
-    <section id="Aporte3" class="card">
-        <h2>Reshade Altos-Medios Recursos</h2>
-        <p>
-        Requisitos: Ryzen 5, 12GB RAM y tarjeta gráfica.
-        <a href="https://www.mediafire.com/file/1rzim6mxup7ccdk/RESHADE+x+zKashyX.zip/file" class="link">Descargar</a>
-        </p>
-    </section>
-    <div class="preview-img">
-        <img src="imagenes/altos.png" alt="Reshade Altos Recursos">
-    </div>
-</section>
-
-<section class="aporte-container">
-    <section id="Aporte4" class="card">
-        <h2>Santos PRIV</h2>
-        <p>
-        Aporte PRIV optimizado para bajos recursos.
-        <a href="https://www.mediafire.com/file/s5zdcex9kc4xfta/KBoosT.rar/file" class="link">Descargar AQUÍ</a>
-        </p>
-    </section>
-    <div class="preview-img">
-        <img src="imagenes/priv.png" alt="Santos PRIV">
-    </div>
-</section>
-
 <audio autoplay loop>
     <source src="https://files.catbox.moe/7kq3o5.mp3" type="audio/mpeg">
 </audio>
@@ -198,23 +172,8 @@ header.hero {
 <footer class="credits">
     <div class="credits-content">
         <h3>Créditos</h3>
-        <p>
-            Página creada por <span class="highlight">
-            Kevin - Dc: <a href="https://www.youtube.com/@anonimbich" class="link">@anonimcore</a>
-            </span>
-        </p>
-        <p>
-            Sígueme en 
-            <a href="https://instagram.com/kevins_1002" target="_blank" class="instagram">
-                <i class="fab fa-instagram"></i> KEVINS
-            </a>
-        </p>
-        <p>
-            Página realizada con HTML y dominio <b>VERCEL</b>
-        </p>
-        <p class="small">
-            © Página editable por el creador en cualquier momento.
-        </p>
+        <p>Página creada por <span class="highlight">Kevin - Dc: @anonimcore</span></p>
+        <p>Sígueme en <a href="https://instagram.com/kevins_1002" target="_blank" class="instagram">KEVINS</a></p>
     </div>
 </footer>
 
