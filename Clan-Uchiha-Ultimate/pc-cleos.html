@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleos | K. Santos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), url("imagenes/fondo.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
 
+        .container-aportes {
+            max-width: 900px;
+            margin: 120px auto 50px;
+            padding: 0 20px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header-section h1 {
+            font-size: 35px;
+            color: #ffcc00;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+        }
+
+        /* DISEÑO DE CADA APORTE */
+        .aporte-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #ffcc00;
+            padding: 25px;
+            border-radius: 0 15px 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .aporte-item:hover {
+            background: rgba(255, 255, 255, 0.07);
+            transform: scale(1.01);
+            border-left: 4px solid #ffffff;
+        }
+
+        .info-aporte h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .info-aporte p {
+            margin: 8px 0 0;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .info-aporte .tag {
+            display: inline-block;
+            background: rgba(255, 204, 0, 0.1);
+            color: #ffcc00;
+            padding: 3px 8px;
+            font-size: 11px;
+            border-radius: 4px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .btn-descarga {
+            background: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            transition:
