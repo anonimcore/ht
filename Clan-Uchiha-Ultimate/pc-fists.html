@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fists Gallery | K. Santos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .gallery-container {
+            max-width: 1100px;
+            margin: 120px auto;
+            padding: 20px;
+            text-align: center;
+        }
 
+        .fist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .fist-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .fist-card:hover {
+            border-color: #ffcc00;
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .fist-card img {
+            width: 100px; /* Tamaño típico de un fist */
+            height: 100px;
+            border-radius: 50%; /* Los hace circulares */
+            margin-bottom: 15px;
+            border: 2px solid #ffcc00;
+            padding: 5px;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .fist-card h3 {
+            color: #ffcc00;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .fist-card .btn-download {
+            display: block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="pc.html">Volver a PC</a>
+    </div>
+</nav>
+
+<div class="gallery-container">
+    <h1 style="text-shadow: 0 0 15px #ffcc00;">🎯 COLECCIÓN DE FISTS</h1>
+    <p>Selecciona el puño que más te guste para tu HUD.</p>
+
+    <div class="fist-grid">
+        <div class="fist-card">
+            <img src="imagenes/fist1.png" alt="Fist Pro">
+            <h3>Fist V1 Blue</h3>
+            <p>Diseño minimalista azul.</p>
+            <a href="LINK_DESCARGA" class="btn-download">Descargar</a>
+        </div>
+
+        <div class="fist-card">
+            <img src="imagenes/fist2.png" alt="Fist Red">
+            <h3>Fist Blood Red</h3>
+            <p>Especial para kills masivas.</p>
+            <a href="LINK_DESCARGA" class="btn-download">Descargar</a>
+        </div>
+
+        <div class="fist-card">
+            <img src="imagenes/fist3.png" alt="Fist Naruto">
+            <h3>Uchiha Fist</h3>
+            <p>Estilo Sharingan (Obito).</p>
+            <a href="LINK_DESCARGA" class="btn-download">Descargar</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+</html>
