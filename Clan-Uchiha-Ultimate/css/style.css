@@ -337,3 +337,116 @@ body {
     color: #ffcc00; 
     text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
 }
+
+/* PC */
+
+/* ==========================================================
+   ESTILOS PARA EL MENÚ DE CATEGORÍAS (pc.html)
+   ========================================================== */
+
+/* Contenedor principal de la sección PC */
+.pc-container {
+    padding: 150px 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título principal con brillo neón */
+.pc-title {
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 204, 0, 0.6); /* Brillo amarillo */
+}
+
+.pc-subtitle {
+    color: #888;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+/* Grid que organiza las 4 tarjetas */
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+/* Estilo de cada tarjeta (Cleos, Luas, etc.) */
+.card-pc {
+    background: rgba(255, 255, 255, 0.03); /* Fondo casi invisible */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animación suave */
+    backdrop-filter: blur(8px); /* Desenfoque de fondo */
+    text-align: center;
+}
+
+/* Efecto al pasar el mouse por la tarjeta */
+.card-pc:hover {
+    border-color: #ffcc00;
+    transform: translateY(-12px); /* Se eleva */
+    box-shadow: 0 15px 45px rgba(255, 204, 0, 0.15);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+/* Iconos dentro de las tarjetas */
+.card-pc i {
+    font-size: 50px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.5));
+}
+
+.card-pc h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+}
+
+.card-pc p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Botón "Ver" dentro de la tarjeta */
+.btn-entrar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 35px;
+    background: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.3s;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-entrar:hover {
+    background: #ffffff;
+    box-shadow: 0 0 25px #ffffff;
+    transform: scale(1.05);
+}
+
+/* Ajuste para móviles */
+@media (max-width: 600px) {
+    .pc-title {
+        font-size: 30px;
+    }
+    .pc-container {
+        padding-top: 100px;
+    }
+}
