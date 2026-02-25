@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>K. Santos | Aports</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K. Santos | Aports</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
-    
-    <!-- Fondo !--->
 
-    <!-- 🔥 FONDO DESDE HTML -->
 <style>
+/* --- TUS ESTILOS ORIGINALES (SIN TOCAR) --- */
 body {
     margin: 0;
     padding: 0;
@@ -23,7 +22,6 @@ body {
     color: white;
 }
 
-/* 🎥 SECCION VIDEO */
 .ultimo-video {
     text-align: center;
     padding: 80px 20px;
@@ -53,26 +51,58 @@ body {
     transform: scale(1.03);
     box-shadow: 0 0 60px rgba(255,0,0,1);
 }
+
+/* --- NUEVA BARRA DE NAVEGACIÓN UBUNTU --- */
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    color: #ffcc00; /* Amarillo neón */
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+}
+
+/* Ajuste para que el contenido no empiece debajo de la barra */
+header.hero {
+    padding-top: 100px; 
+}
 </style>
 
 <body>
 
 <div class="mangekyo"></div>
 
-<nav>
-    <div class="logo">
-        <svg viewBox="0 0 500 120" class="signature">
-            <text x="10" y="80">Kevin Santos</text>
-        </svg>
-    </div>
-</nav>
-    <nav class="navbar">
+<nav class="navbar">
     <div class="nav-links">
-        <a href="#">Discord</a>
-        <a href="#">PC</a>
-        <a href="#">Droid</a>
-        <a href="#">Contacto</a>
-        <a href="#">Amigos</a>
+        <a href="https://discord.gg/TU_LINK">Discord</a>
+        <a href="pc.html">PC</a>
+        <a href="droid.html">Droid</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="amigos.html">Amigos</a>
     </div>
 </nav>
 
@@ -95,12 +125,9 @@ body {
     </p>
 </header>
 
-    <!-- 🎥 MI ÚLTIMO VIDEO -->
 <section class="ultimo-video">
     <h2>🎥 MI ÚLTIMO VIDEO</h2>
-
     <div class="video-box">
-        <!-- 🔴 CAMBIA EL ID DEL VIDEO -->
         <iframe 
             src="https://www.youtube.com/embed/gdgJd94h4h0?start=33s"
             title="Mi Último Video"
@@ -110,82 +137,62 @@ body {
     </div>
 </section>
 
-<!-- APORTE 1 -->
 <section class="aporte-container">
-
-<section id="Aporte1" class="card">
-<h2>Aporte Gri$</h2>
-<p>
-<b>Aporte gris</b>, bajos recursos, optimizado en V1, sin keylogger ni malware,
-apto para cualquier SAMP.
-<a href="https://www.mediafire.com/file/8ckok6r0thiyjsa/Santos.rar/file" class="link">Descargar</a>
-</p>
+    <section id="Aporte1" class="card">
+        <h2>Aporte Gri$</h2>
+        <p>
+        <b>Aporte gris</b>, bajos recursos, optimizado en V1, sin keylogger ni malware,
+        apto para cualquier SAMP.
+        <a href="https://www.mediafire.com/file/8ckok6r0thiyjsa/Santos.rar/file" class="link">Descargar</a>
+        </p>
+    </section>
+    <div class="preview-img">
+        <img src="imagenes/gris.png" alt="Aporte Gris">
+    </div>
 </section>
 
-<div class="preview-img">
-<img src="imagenes/gris.png" alt="Aporte Gris">
-</div>
-
-</section>
-
-
-<!-- APORTE 2 -->
 <section class="aporte-container">
-
-<section id="Aporte2" class="card">
-<h2>Aporte full bajos recursos</h2>
-<p>
-¿Buscas un aporte ultra bajos recursos? Corre a 40-50 FPS estables.
-Aporte <b>BAJOS RECURSOS</b> by <b>Santos</b> V2.
-<a href="https://www.mediafire.com/file/k2gnrf4q26h0oy0/PRv.zip/file" class="link">Descargar</a>
-</p>
+    <section id="Aporte2" class="card">
+        <h2>Aporte full bajos recursos</h2>
+        <p>
+        ¿Buscas un aporte ultra bajos recursos? Corre a 40-50 FPS estables.
+        Aporte <b>BAJOS RECURSOS</b> by <b>Santos</b> V2.
+        <a href="https://www.mediafire.com/file/k2gnrf4q26h0oy0/PRv.zip/file" class="link">Descargar</a>
+        </p>
+    </section>
+    <div class="preview-img">
+        <img src="imagenes/bajosrecursos.png" alt="Aporte Bajos Recursos">
+    </div>
 </section>
 
-<div class="preview-img">
-<img src="imagenes/bajosrecursos.png" alt="Aporte Bajos Recursos">
-</div>
-
-</section>
-
-
-<!-- APORTE 3 -->
 <section class="aporte-container">
-
-<section id="Aporte3" class="card">
-<h2>Reshade Altos-Medios Recursos</h2>
-<p>
-Requisitos: Ryzen 5, 12GB RAM y tarjeta gráfica.
-<a href="https://www.mediafire.com/file/1rzim6mxup7ccdk/RESHADE+x+zKashyX.zip/file" class="link">Descargar</a>
-</p>
+    <section id="Aporte3" class="card">
+        <h2>Reshade Altos-Medios Recursos</h2>
+        <p>
+        Requisitos: Ryzen 5, 12GB RAM y tarjeta gráfica.
+        <a href="https://www.mediafire.com/file/1rzim6mxup7ccdk/RESHADE+x+zKashyX.zip/file" class="link">Descargar</a>
+        </p>
+    </section>
+    <div class="preview-img">
+        <img src="imagenes/altos.png" alt="Reshade Altos Recursos">
+    </div>
 </section>
 
-<div class="preview-img">
-<img src="imagenes/altos.png" alt="Reshade Altos Recursos">
-</div>
-
-</section>
-
-
-<!-- APORTE 4 -->
 <section class="aporte-container">
-
-<section id="Aporte4" class="card">
-<h2>Santos PRIV</h2>
-<p>
-Aporte PRIV optimizado para bajos recursos.
-<a href="https://www.mediafire.com/file/s5zdcex9kc4xfta/KBoosT.rar/file" class="link">Descargar AQUÍ</a>
-</p>
+    <section id="Aporte4" class="card">
+        <h2>Santos PRIV</h2>
+        <p>
+        Aporte PRIV optimizado para bajos recursos.
+        <a href="https://www.mediafire.com/file/s5zdcex9kc4xfta/KBoosT.rar/file" class="link">Descargar AQUÍ</a>
+        </p>
+    </section>
+    <div class="preview-img">
+        <img src="imagenes/priv.png" alt="Santos PRIV">
+    </div>
 </section>
-
-<div class="preview-img">
-<img src="imagenes/priv.png" alt="Santos PRIV">
-</div>
-
-</section>
-
 
 <audio autoplay loop>
-<source src="https://files.catbox.moe/7kq3o5.mp3" type="audio/mpeg">
+    <source src="https://files.catbox.moe/7kq3o5.mp3" type="audio/mpeg">
 </audio>
 
 <footer class="credits">
@@ -196,18 +203,15 @@ Aporte PRIV optimizado para bajos recursos.
             Kevin - Dc: <a href="https://www.youtube.com/@anonimbich" class="link">@anonimcore</a>
             </span>
         </p>
-
         <p>
             Sígueme en 
             <a href="https://instagram.com/kevins_1002" target="_blank" class="instagram">
                 <i class="fab fa-instagram"></i> KEVINS
             </a>
         </p>
-
         <p>
             Página realizada con HTML y dominio <b>VERCEL</b>
         </p>
-
         <p class="small">
             © Página editable por el creador en cualquier momento.
         </p>
