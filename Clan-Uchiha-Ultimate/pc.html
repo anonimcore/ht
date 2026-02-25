@@ -2,123 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Aports | K. Santos</title>
+    <title>Cleos | K. Santos</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: 
-                linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
-                url("imagenes/fondo.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            font-family: 'Ubuntu', sans-serif;
+        /* Estilo rápido para la lista de descargas */
+        .download-list {
+            max-width: 900px;
+            margin: 120px auto;
+            padding: 20px;
         }
-
-        /* BARRA DE NAVEGACIÓN (Igual que el Index) */
-        .navbar {
-            width: 100%;
-            padding: 20px 0;
-            display: flex;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.7); 
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        .nav-links a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 700;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            transition: 0.3s;
-            opacity: 0.7;
-        }
-
-        .nav-links a:hover {
-            opacity: 1;
-            color: #ffcc00; 
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
-        }
-
-        /* CONTENIDO DE PC */
-        .pc-container {
-            padding: 120px 20px 50px;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .pc-title {
-            font-size: 40px;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-        }
-
-        /* GRID DE CATEGORÍAS */
-        .grid-categorias {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .card-pc {
+        .download-item {
             background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            transition: 0.4s;
-            backdrop-filter: blur(5px);
-        }
-
-        .card-pc:hover {
-            border-color: #ffcc00;
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(255, 204, 0, 0.1);
-        }
-
-        .card-pc i {
-            font-size: 40px;
-            color: #ffcc00;
+            border-left: 4px solid #ffcc00;
             margin-bottom: 15px;
-        }
-
-        .card-pc h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
-            color: #ffcc00;
-        }
-
-        .btn-download {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #ffcc00;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 10px 10px 0;
             transition: 0.3s;
         }
-
-        .btn-download:hover {
-            background: white;
-            box-shadow: 0 0 15px white;
+        .download-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.02);
         }
+        .info h4 { margin: 0; color: #ffcc00; font-size: 18px; }
+        .info p { margin: 5px 0 0; color: #ccc; font-size: 14px; }
     </style>
 </head>
 <body>
@@ -126,54 +36,30 @@
 <nav class="navbar">
     <div class="nav-links">
         <a href="index.html">Inicio</a>
-        <a href="https://discord.gg/TU_LINK" target="_blank">Discord</a>
-        <a href="pc.html" style="color: #ffcc00; opacity: 1;">PC</a>
-        <a href="droid.html">Droid</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="amigos.html">Amigos</a>
+        <a href="pc.html">Volver a PC</a>
     </div>
 </nav>
 
-<div class="pc-container">
-    <h1 class="pc-title">Aportes para PC</h1>
-    
-    <div class="grid-categorias">
-        
-        <div class="card-pc">
-            <i class="fas fa-code"></i>
-            <h3>CLEOS</h3>
-            <p>Scripts Cleo optimizados para mejorar tu experiencia en SAMP sin lag.</p>
-            <a href="#" class="btn-download">Ver Cleos</a>
-        </div>
+<div class="download-list">
+    <h1 style="text-align: center; color: white;">📂 APORTES CLEO</h1>
 
-        <div class="card-pc">
-            <i class="fas fa-file-code"></i>
-            <h3>LUAS</h3>
-            <p>Los mejores Moonloader scripts: Autologin, binds y utilidades PRO.</p>
-            <a href="#" class="btn-download">Ver Luas</a>
+    <div class="download-item">
+        <div class="info">
+            <h4>Antilag Pro V1</h4>
+            <p>Mejora los FPS eliminando efectos innecesarios.</p>
         </div>
-
-        <div class="card-pc">
-            <i class="fas fa-tools"></i>
-            <h3>HERRAMIENTAS</h3>
-            <p>Alci's IMZ Editor, TXD Workshop y todo lo necesario para modear.</p>
-            <a href="#" class="btn-download">Descargar</a>
-        </div>
-
-        <div class="card-pc">
-            <i class="fas fa-crosshairs"></i>
-            <h3>FISTS</h3>
-            <p>Iconos de arma y puños (fist.txd) personalizados con estilo único.</p>
-            <a href="#" class="btn-download">Ver Fists</a>
-        </div>
-
+        <a href="LINK_DE_MEDIAFIRE" class="btn-download">Descargar</a>
     </div>
 
-    <br><br>
-    <a href="index.html" style="color: #aaa; text-decoration: none;">← Volver al inicio</a>
-</div>
+    <div class="download-item">
+        <div class="info">
+            <h4>Sensibilidad Fix</h4>
+            <p>Corrige la sensibilidad del eje Y en el mouse.</p>
+        </div>
+        <a href="LINK_DE_MEDIAFIRE" class="btn-download">Descargar</a>
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</div>
 
 </body>
 </html>
